@@ -1,0 +1,35 @@
+/*  
+ * A few needed CSS additions to truly integrate Bootstrap into WordPress, 
+ * We kept this slim as possible. Try to avoid any overwriting if not really needed.  
+ */
+
+
+/* First fix the dropdown menu. 
+ * Most stuff is handled by the walker, but some styles need to be added too.   
+ * Here we are removing the ">" from the original bootstrap styles, so it works for 2nd and 3rd level dropdown too.  */ 
+.dropdown-menu li a {
+	clear: both;
+	color: #333;
+	display: block;
+	font-weight: normal;
+	line-height: 1.428571429;
+	padding: 3px 20px;
+	white-space: nowrap;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+	background-color: #357ebd;
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#357ebd));
+	background-image: -webkit-linear-gradient(top, #428bca, 0%, #357ebd, 100%);
+	background-image: -moz-linear-gradient(top, #428bca 0%, #357ebd 100%);
+	background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
+	text-decoration: none;
+	color: #ffffff;
+}
+.dropdown-menu ul { list-style: none; }
+
+/* Modified padding for the Bootstrap container. 
+ */ 
+.container { padding: 0 15px 15px 15px; }

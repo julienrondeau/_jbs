@@ -1,0 +1,31 @@
+/*
+Theme Name: _jbs
+Theme URI: http://www.jeffbrockstudio.com
+Author: Jeff Brock Studio
+Author URI: http://www.jeffbrockstudio.com
+Description: Ultra-minimal starter theme _jbs, integrating the offical Sass port of Bootstrap, based on the _s and _tk starter themes.
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+_jbs is based on:
+1) Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+2) _tk http://themekraft.com/tk/
+3) Official Sass port of Bootstrap https://github.com/twbs/bootstrap-sass
+
+*/
+
+// Basic styling
+@import 'basic';
+
+// Import the necessary _jbs Bootstrap WordPress CSS additions
+@import 'bootstrap-wp';
+
+// Bootstrap 3.2
+@import 'bootstrap';
+
+// Import the custom styling for the theme
+@import 'custom';
